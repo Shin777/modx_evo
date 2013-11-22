@@ -1,8 +1,9 @@
 <?php
+if(!defined('MODX_BASE_PATH')){die('What are you doing? Get out of here!');}
 /*
 /кодирования почт от ботов
 /пример использования  [[spiderhide? &input=`[*siteemail*]`]]
-/ или [[spiderhide? &input=`info@site.ru"`]]  
+/ или [[spiderhide? &input=`info@site.ru`]]  
 */
 if(!function_exists('obfuscate_numeric')){
   function obfuscate_numeric($plaintext) { 
@@ -19,5 +20,5 @@ if(!function_exists('obfuscate_numeric')){
     return $obfuscated; 
   }
 }   
-return obfuscate_numeric($input);
+return obfuscate_numeric($input);	
 ?>
